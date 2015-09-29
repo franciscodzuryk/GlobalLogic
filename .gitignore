@@ -1,0 +1,27 @@
+#### .gitignore
+# xcode noise
+Build/
+Dist/
+DerivedData/
+#project.xcworkspace/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserdatad/
+profile
+1
+ 
+#automated testing & code coverage
+test-reports/*
+coverage/*
+ 
+# osx noise
+.LSOverride
+*.swp
+.DS_Store
+agi18n.log
+
+#CocoaPods
+Pods
+Podfile.lock
