@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Continent.h"
 
 @interface GlobalLogicTests : XCTestCase
 
@@ -24,9 +25,12 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testNewContinentAsia {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    Continent *asia = [Continent continentWithName:@"Asia"];
+    XCTAssertEqualObjects([asia name], @"Asia");
+    XCTAssertEqual([[asia countries] count], 6);
 }
 
 - (void)testPerformanceExample {
